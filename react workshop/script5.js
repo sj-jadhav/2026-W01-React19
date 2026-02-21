@@ -10,6 +10,10 @@ let user={
         {count:144}
     ]
 }
-console.log(user.profile[0].name+":" +user.rating[0].count);
-console.log(user.profile[1].name+":" +user.rating[1].count);
-console.log(user.profile[2].name+":" +user.rating[2].count);
+let x=user.profile.map(item =>item.name);
+let y=user.rating.map(item =>item.count);
+output={};
+for(let i=0;i<x.length;i++){
+    output[x[i]]=y[i];
+}
+console.log(output);
