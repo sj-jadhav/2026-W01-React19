@@ -1,17 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Header from './Header';
+import Caraousal from './Caraousal';
+import Offers from './Offers';
+import Footer from './Footer';
+let App = () => {
   return (
 
     <div className="App">
 
-        <h1 style={{textAlign:"center", color:"blue", backgroundColor:"skyblue"}}>Hello World</h1>
 
-        <p className="paragraph-style">React is a open source javascript library maintained by facebook community</p>
+      <Header />
+      <Caraousal />
+      <Offers />
+      <Footer />
+
+
     </div>
 
   );
 }
 
+
+
+
+
+
 export default App;
+
+
+
+/* <h1 style={{textAlign:"center", color:"blue", backgroundColor:"skyblue"}}>Hello World</h1>
+
+        <p className="paragraph-style">React is a open source javascript library maintained by facebook community</p> */
