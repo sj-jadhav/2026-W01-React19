@@ -9,7 +9,14 @@ let employees ={
     
 
 }
-let _skills={...employees.skills};
-console.log(_skills);
-employees={...employees,skills :[...employees.skills,"react"]};
+// let _skills={...employees.skills};
+// console.log(_skills);
+
+// employees={...employees,skills :[...employees.skills,"react"]};
+// console.log(employees);
+
+//replace analyst to enggi
+
+// employees={...employees, role :employees.role.map(item =>item.position ==="analyst")? {...item , position:"engineer"}: item}
+employees ={...employees,role:[...employees.role,employees.role[1].title="Engineer"]}
 console.log(employees);
