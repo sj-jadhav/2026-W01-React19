@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Caraousal from './Caraousal';
-import Offers from './Offers';
-import Footer from './Footer';
+import Header from './components/Header';
+import Caraousal from './components/Caraousal';
+import Offers from './components/Offers';
+import Footer from './components/Footer';
 let App = () => {
   return (
 
